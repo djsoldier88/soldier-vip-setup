@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0c0d0d" />
+    <title>Soldier VIP | Установка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="hero wrap">
+        <img class="brand-mark" src="soldier-vip-icon.png" alt="Soldier VIP" />
+        <div>
+          <p class="eyebrow">SOLDIER INNER CIRCLE</p>
+          <h1>Soldier VIP</h1>
+          <p class="lead">Закрытый комбайн для создания и публикации коротких видео.</p>
+        </div>
+        <span class="access-pill">Доступ по лицензии</span>
+      </header>
+
+      <section class="wrap intro" aria-label="Начало установки">
+        <div>
+          <p class="section-label">ПЕРЕД УСТАНОВКОЙ</p>
+          <h2>Выберите свою систему</h2>
+          <p>Скачайте установщик только из закрытого чата. После установки введите персональный ключ, который выдал администратор.</p>
+        </div>
+        <div class="notice"><strong>Важно:</strong> один ключ активируется на одном устройстве. Не передавайте ключ и установщик другим людям.</div>
+      </section>
+
+      <section class="wrap platform-grid">
+        <article class="platform-card windows">
+          <div class="card-top"><span class="platform-icon">▣</span><span>WINDOWS 10 / 11</span></div>
+          <h2>Установка на Windows</h2>
+          <ol>
+            <li>Скачайте файл <code>Soldier-VIP-Setup.exe</code> из закрытого чата.</li>
+            <li>Запустите установщик и оставьте стандартную папку установки.</li>
+            <li>Откройте Soldier VIP через ярлык на рабочем столе.</li>
+            <li>Вставьте лицензионный ключ и завершите мастер первого запуска.</li>
+          </ol>
+          <a class="download-button" data-download="windows" href="#download-from-chat">Скачать для Windows <span>→</span></a>
+          <p class="file-note" data-download-note="windows">Файл выдаётся в закрытом чате.</p>
+        </article>
+
+        <article class="platform-card mac">
+          <div class="card-top"><span class="platform-icon">●</span><span>MACOS · M1 / M2 / M3 / M4</span></div>
+          <h2>Установка на Mac</h2>
+          <ol>
+            <li>Скачайте ZIP-архив <code>Soldier-VIP-macOS-apple-silicon.zip</code>.</li>
+            <li>Распакуйте ZIP только на Mac, затем откройте файл <code>.dmg</code>.</li>
+            <li>Перетащите <code>Soldier VIP.app</code> в папку <code>Applications</code>.</li>
+            <li>Откройте Terminal и выполните команду ниже один раз.</li>
+          </ol>
+          <div class="terminal"><code>xattr -dr com.apple.quarantine "/Applications/Soldier VIP.app"</code><button type="button" data-copy="xattr -dr com.apple.quarantine &quot;/Applications/Soldier VIP.app&quot;">Копировать</button></div>
+          <a class="download-button" data-download="macos" href="#download-from-chat">Скачать для Mac <span>→</span></a>
+          <p class="file-note" data-download-note="macos">Только для Mac с процессорами Apple M.</p>
+        </article>
+      </section>
+
+      <section class="wrap activation">
+        <p class="section-label">ПЕРВЫЙ ЗАПУСК</p>
+        <div class="activation-row">
+          <h2>Активируйте доступ</h2>
+          <p>Введите выданный ключ формата <code>SVIP-XXXX-XXXX-XXXX</code>. Ключ привязывается к вашему Telegram-аккаунту и одному устройству.</p>
+        </div>
+      </section>
+
+      <section class="wrap support" id="download-from-chat">
+        <div>
+          <p class="section-label">НУЖНА ПОМОЩЬ</p>
+          <h2>Не получается установить?</h2>
+          <p>Напишите администратору закрытого чата и приложите скриншот ошибки. Не отправляйте никому API-ключи, пароли или cookies.</p>
+        </div>
+        <a class="support-link" href="https://t.me/DjSoldieR" target="_blank" rel="noreferrer">Написать администратору <span>↗</span></a>
+      </section>
+    </main>
+    <footer class="wrap"><span>Soldier VIP</span><span>Private automation suite</span></footer>
+    <script src="downloads.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
