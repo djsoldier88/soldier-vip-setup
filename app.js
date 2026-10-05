@@ -15,5 +15,6 @@ document.querySelectorAll('[data-download]').forEach((link) => {
   link.target = '_blank';
   link.rel = 'noreferrer';
   const note = document.querySelector(`[data-download-note="${platform}"]`);
-  if (note) note.textContent = 'Актуальная версия Soldier VIP.';
+  const version = window.SOLDIER_VIP_VERSIONS?.[platform];
+  if (note) note.textContent = version ? `Soldier VIP ${version}${platform === 'windows' ? ' · Редактируемый проект и Инструкции.txt на рабочем столе.' : ' · Apple M.'}` : 'Актуальная версия Soldier VIP.';
 });
